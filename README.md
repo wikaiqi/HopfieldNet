@@ -13,5 +13,9 @@ A synapse between two neurons is strengthened when the neurons on either side of
 ## Run Hopfield neural network
 ```
 from Hopfield import HopfieldNN
-HopfieldNN(N_nodes, Q_patterns, test_img, T, T_steps, N_tests, ini_olp, retrieval_pattern)
+HopNN  = HopfieldNN(N_nodes, Q_patterns, test_img, T, T_steps, N_tests, ini_olp, retrieval_pattern)
+states = HopNN.run_Ntest()
 ```
+
+## Example:MNIST handwritting
+![GitHub Logo](/images/logo.png)
