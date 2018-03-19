@@ -13,6 +13,9 @@ A synapse between two neurons is strengthened when the neurons on either side of
 ## Run Hopfield neural network
 ```
 from Hopfield import HopfieldNN
+import numpy as np
+import matplotlib.pyplot as plt
+import cv2
 
 # set network parameters
 N_nodes    = 900
