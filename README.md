@@ -15,9 +15,14 @@ A synapse between two neurons is strengthened when the neurons on either side of
 HopNN  = HopfieldNN(N_nodes, Q_patterns, test_img, T, T_steps, N_tests, ini_olp, retrieval_pattern)
 states = HopNN.run_Ntest()
 ```
--N_nodes: number of neurons
--Q_patterns: number of patterns store in memory
--test_img: test retrieval image
+* N_nodes: number of neurons
+* Q_patterns: number of patterns store in memory
+* test_img: test retrieval image
+* T: temperature
+* T_steps: number of time steps for each test
+* N_tests: number of tests
+* ini_olp: intial overlap
+* retrieval_pattern: the tetrieval pattern
 
 ## Example:MNIST handwritting
 ![MNIST handwrittinh](https://github.com/wikaiqi/HopfieldNet/blob/master/hardwrittingexample.png)
