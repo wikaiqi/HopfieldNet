@@ -18,4 +18,4 @@ states = HopNN.run_Ntest()
 ```
 
 ## Example:MNIST handwritting
-![GitHub Logo](/images/logo.png)
+![MNIST handwrittinh](https://github.com/wikaiqi/HopfieldNet/blob/master/hardwrittingexample.png)
