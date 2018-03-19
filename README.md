@@ -8,7 +8,7 @@ Physicists have analyzed the Hopfield model in such exquisite detail because it 
 
 ## Hebbian learning rule
 
-A synapse between two neurons is strengthened when the neurons on either side of the synapse have highly correlated outputs. In essence, when an input neuron fires, if it frequently leads to the firing of the output neuron, the synapse is strengthened. 
+In this code, we use Hebbian learning rule. A synapse between two neurons is strengthened when the neurons on either side of the synapse have highly correlated outputs. In essence, when an input neuron fires, if it frequently leads to the firing of the output neuron, the synapse is strengthened. 
 
 ## Run Hopfield neural network
 ```
