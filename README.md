@@ -13,6 +13,27 @@ A synapse between two neurons is strengthened when the neurons on either side of
 ## Run Hopfield neural network
 ```
 from Hopfield import HopfieldNN
+
+# set network parameters
+N_nodes    = 900
+Q_patterns = 40
+T_steps    = 12
+N_tests    = 1
+ini_olp    = 0.18
+T          = 0.02
+retrieval_pattern = 0
+
+# load mnist test example
+Xdata = np.loadtxt('mnist/mnistexample.txt')
+i     = 1
+
+this_data     = Xdata[i]
+img           = this_data.reshape(28, 28)
+resized_image = cv2.resize(img, (30, 30))
+resized_image[np.where(resized_image < 0.5)] = -1
+resized_image[np.where(resized_image > 0.5)] = 1
+test_img = resized_image.reshape(N_nodes)
+
 HopNN  = HopfieldNN(N_nodes, Q_patterns, test_img, T, T_steps, N_tests, ini_olp, retrieval_pattern)
 states = HopNN.run_Ntest()
 ```
